@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML forms</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+<header>
+</header>
+<form name="my form" action="formmail.php" method="post">
+
+<input type="hidden" name="recipient" value="rnl21@txstate.edu" />
+<input type="hidden" name="redirect" value="redirect.html" />
+<input type="hidden" name="required" value="email" />
+<input type="hidden" name="subject" value="My Form" />
+
+<p>First Name: <input type="text" name="firstname" /> Last Name: <input type="text" name="lastname" /></p>
+
+<p>Email: <input type="text" name="email" />(Required)</p>
+
+<p>Are you?:<br />
+<input type="radio" name="gender" value="male" />Male<br />
+<input type="radio" name="gender" value="female" />Female<br />
+<input type="radio" name="gender" value="other" />Other</p>
+
+
+<p>Do you use any of these methods of transportation?</p>
+<p><input type="checkbox" name="vehicle{}" value="Bike" />Bike<br />
+<p><input type="checkbox" name="vehicle{}" value="Car" />Car<br />
+<p><input type="checkbox" name="vehicle{}" value="Bus" />Bus<br />
+<p><input type="checkbox" name="vehicle{}" value="Train" />Train</p>
+
+
+<p>What type of car do you own?</p>
+<select name="car">
+	<option value="ford">Ford</option>
+	<option value="ford">Volvo</option>
+	<option value="ford">Saab</option>
+	<option value="ford">Hyundai</option>
+	<option value="ford">Mercedes</option>
+	<option value="ford">Audi</option>
+</select>
+
+<p>Comments:<br> <textarea rows="4" cols="50" name="message"></textarea></p>
+
+<p><input type="Submit" value="Submit" /> <input type="Reset" value="Reset" /></p>
+
+	
+</form>
+</div>
+</body>
+</html>
